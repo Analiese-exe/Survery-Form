@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1 id="title">Programmer's Survey</h1>
+    <p id="description">A short survey for programmers invested in tech.</p>
+    <form id="survey-form">
+        <fieldset>
+        <label id="name-label">Name:</label>
+        <input type="text" id="name" placeholder="Enter your name" class="First" required>
+       <label id="email-label">Email:</label>
+        <input type="email" id="email" placeholder="Enter your email" class="First" required>
+        <label id="number-label">Age:</label>
+        <input type="number" id="number" min="8" max="120" pattern="{1,2,3,4,5,6,7,8,9}" placeholder="Enter your age" class="First">
+    </fieldset>
+    <fieldset>
+        <label for="dropdown">Which option describes your current role?</label>
+        <select name="dropdown" id="dropdown">
+            </fieldset>
+            <option value="1">choose 1</option>
+            <option value="2">Software engineer</option>
+            <option value="3">Product Designer</option>
+            <option value="4">Product Manager</option>
+        </select>
+        <label for="job">Employment Status</label>
+        <div class="job">
+        <input type="radio"  name="jobId" id="job" class="job" value="part-time"> Part-time job holder. (Freelancer)<br>
+        <input type="radio"  name="jobId" id="job" class="job" value="looking" >Looking for a job. (Applier) <br>
+        <input type="radio"  name="jobId" id="job" class="job" value="employed" > Full-time job holder. (Employed) <br>
+        <input type="radio"  name="jobId" id="job" class="job" value="student" > I am a student. (Unemployed)<br>
+    </div>
+    </fieldset>
+    <fieldset>
+        <label for="languages">What languages are you hoping to learn?</label>
+        <label for="languages">  <input type="checkbox" id="languages" value="c++" checked class="inline">C++ </label>
+       <label for="languages"> <input type="checkbox" id="languages" value="Java"class="inline">Java </label>
+        <label for="languages"> <input type="checkbox" id="languages" value="Javascript"class="inline">Javascript</label> 
+        <label for="languages"><input type="checkbox" id="languages" value="HTML"class="inline">HTML </label>
+       <label for="languages"> <input type="checkbox" id="languages" value="CSS"class="inline">CSS </label>
+        <label for="languages"><input type="checkbox" id="languages" value="python"class="inline">Python </label>
+        <label for="languages"><input type="checkbox" id="languages" value="rust"class="inline">Rust </label>
+
+       <label for="comments">Why should we give you this scholarship?</label>
+       <textarea name="comments" id="comments" cols="30" rows="5"></textarea>
+       <input type="submit" id="submit">
+    </fieldset>
+    </form>
+
+</body>
+</html>
